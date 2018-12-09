@@ -5,7 +5,7 @@ let core = require('@idio/core'); if (core && core.__esModule) core = core.defau
 
   }, { port: process.env.PORT || 5000 })
   router.get('/', async (ctx, next) => {
-    ctx.body = 'hello world'
+    ctx.body = 'hello demimonde'
     await next()
   })
   app.use(router.routes())

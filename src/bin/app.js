@@ -5,7 +5,7 @@ import core from '@idio/core'
 
   }, { port: process.env.PORT || 5000 })
   router.get('/', async (ctx, next) => {
-    ctx.body = 'hello world'
+    ctx.body = 'hello demimonde'
     await next()
   })
   app.use(router.routes())
