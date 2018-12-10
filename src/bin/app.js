@@ -49,7 +49,7 @@ ${l}</html>
       ctx.body = 'SECRET is not set on the app.'
       return
     }
-    const redirect = `http://${ctx.host}/redirect`
+    const redirect = `${ctx.protocol}://${ctx.host}/redirect`
     const { state } = ctx.query
     if (state != ctx.session.state) {
       ctx.body = 'Wrong state'
