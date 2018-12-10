@@ -41,7 +41,7 @@ ${l}</html>
     ctx.redirect(u)
   })
   router.get('/signout', async (ctx) => {
-    ctx.session.token = null
+    ctx.session = null
     ctx.redirect('/')
   })
   router.get('/redirect', async (ctx) => {
