@@ -31,7 +31,7 @@ ${l}</html>
     }
     const state = Math.floor(Math.random() * 10000)
     ctx.session.state = state
-    const redirect = `http://${ctx.host}/redirect`
+    const redirect = `${ctx.protocol}://${ctx.host}/redirect`
     const u = facebookDialogUrl({
       client_id: CLIENT_ID,
       redirect_uri: redirect,
